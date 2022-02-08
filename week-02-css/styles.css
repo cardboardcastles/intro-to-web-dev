@@ -9,6 +9,7 @@ p {
 }
 
 /* ID selector that gives the element with this ID a red style. */
-#boldly {
-  color: red;
+#redrobe {
+  color:darkred;
+  font-style: italic;
 }
