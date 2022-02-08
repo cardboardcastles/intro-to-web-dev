@@ -1,6 +1,7 @@
 /* Element selector that gives every p element a monospace font. */
 p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
 }
 /* Class selector that gives elements with this class a big bold style. */
 .goodjust {
@@ -8,8 +9,19 @@ p {
   font-weight: bold;
 }
 
-/* ID selector that gives the element with this ID a red style. */
 #redrobe {
   color:darkred;
+  font-size: larger;
   font-style: italic;
+}
+
+#bureau {
+  color: blue;
+  font-style: italic;
+  font-size:smaller;
+}
+
+h6 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
 }
