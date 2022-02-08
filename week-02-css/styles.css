@@ -1,9 +1,16 @@
-/* Element selector that gives every p element a monospace font. */
+div {
+  text-align: center;
+   border: thick dotted darkmagenta;
+   color: midnightblue;
+}
+
+
+}
 p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: left;
 }
-/* Class selector that gives elements with this class a big bold style. */
+
 .goodjust {
   font-size: large;
   font-weight: bold;
