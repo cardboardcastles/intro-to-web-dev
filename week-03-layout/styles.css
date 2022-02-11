@@ -1,12 +1,41 @@
 nav {
-  border: thin solid black;
+  border: thin dashed black;
+  text-align: center;
+  justify-content: space-around
+}
+.container {
+  display: grid;
+  grid-template-columns: [left] 1fr 2fr [right];
+  grid-template-rows : 100px [middle] 50px 100px [bottom];
+}
+
+
+.red {
+  background-color: black;
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.something {
+  background-color:lime;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.middle {
+  display: flex;
+  gap: 10px
+}
+
+.content {
+  flex-grow: 1;
 }
 
 div {
   border: thin solid black;
-  margin: 25px 0;
-}
-
-footer {
-  border: thin solid black;
+  padding: 10px;
 }
