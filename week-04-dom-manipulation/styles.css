@@ -1,8 +1,43 @@
 #output {
-  /* Output starts invisible */
+ 
   display: none;
 }
 
 #adjective-one-output {
   font-weight: bold;
+}
+
+#output2 {
+ 
+  display: none;
+}
+
+#adjective-two-output {
+  font-weight: bold;
+}
+
+#output3 {
+ 
+  display: none;
+}
+
+
+#adjective-three-output {
+  font-weight: bold;
+}
+
+
+#output4 {
+  
+  display: none;
+}
+
+#adjective-four-output {
+  font-weight: bold;
+}
+
+#story {
+
+font-family: fantasy 
+
 }
