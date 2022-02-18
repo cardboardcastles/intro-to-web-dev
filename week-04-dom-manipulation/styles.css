@@ -36,8 +36,16 @@
   font-weight: bold;
 }
 
-#story {
 
-font-family: fantasy 
+#output5 {
+  
+  display: none;
+}
 
+#adjective-five-output {
+
+font-weight:bold;
+font-size: larger;
+font-style: italic;
+color: red;
 }

@@ -77,10 +77,3 @@ function Green() {
   outputDiv.style.display = 'block';
 
 }
-function surprise() {
-
-let labelElement = document.getElementById('output6');
-labelElement.innerHTML = 'We will actually use that one later. What I bet you did not expect, is that these silly things you have been typing tell another story. <p>The result is below, enjoy the consequences of your actions:</p>';
-
-
-}
