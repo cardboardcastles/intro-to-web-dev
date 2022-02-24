@@ -6,14 +6,14 @@ function submitAnswerOne() {
   // Get the text from answer one's input element
   const answerOne = answerOneInput.value;
 
-  if(answerOne == 'cat') {
-    alert("That's right!");
+  if(answerOne == '5060') {
+    alert("Correct!");
     hide('question-one');
     show('question-two');
-  } else if(answerOne == 'dog') {
-    alert('Close, but my favorite animal runs away from dogs.');
+  } else if(answerOne == 'a number') {
+    alert('oh, how clever. Get a calculator and try again.');
   } else {
-    alert('Wrong! Hint: My favorite animal meows.')
+    alert('...try again.')
   }
 }
 
@@ -25,7 +25,7 @@ function submitAnswerTwo() {
   // Get the number from answer two's input element
   const answerTwo = answerTwoInput.value;
 
-  if(answerTwo == 42) {
+  if(answerTwo == "May 2nd, 1972") {
     alert("That's right!");
     hide('question-two');
     show('done');
