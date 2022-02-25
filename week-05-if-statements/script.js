@@ -1,7 +1,5 @@
-// When this function is called, it takes the user's answer to the first
-// question and uses if statements to check whether it's correct.
+
 function submitAnswerOne() {
-  // Get answer one's input element
   const answerOneInput = document.getElementById('answer-one-input');
   // Get the text from answer one's input element
   const answerOne = answerOneInput.value;
@@ -17,12 +15,11 @@ function submitAnswerOne() {
   }
 }
 
-// When this function is called, it takes the user's answer to the second
-// question and uses if statements to check whether it's correct.
+
 function submitAnswerTwo() {
-  // Get answer two's input element
+
   const answerTwoInput = document.getElementById('answer-two-input');
-  // Get the number from answer two's input element
+
    const answerTwo = answerTwoInput.value;
 
   if(answerTwo == "May 2nd, 1972") {
@@ -39,9 +36,9 @@ function submitAnswerTwo() {
 }
 
 function submitAnswerThree() {
-  // Get answer two's input element
+
   const answerThreeInput = document.getElementById('answer-three-input');
-  // Get the number from answer two's input element
+
   const answerThree = answerThreeInput.value;
 
   if(answerThree == "goat") {
@@ -60,9 +57,9 @@ function submitAnswerThree() {
 }
 
 function submitAnswerFour() {
-  // Get answer one's input element
+
   const answerFourInput = document.getElementById('answer-four-input');
-  // Get the text from answer one's input element
+
   const answerFour = answerFourInput.value;
 
   if(answerFour == '100') {
@@ -77,9 +74,9 @@ function submitAnswerFour() {
 }
 
 function submitAnswerFive() {
-  // Get answer one's input element
+
   const answerFiveInput = document.getElementById('answer-five-input');
-  // Get the text from answer one's input element
+
   const answerFive = answerFiveInput.value;
 
   if(answerFive == 'charon') {
