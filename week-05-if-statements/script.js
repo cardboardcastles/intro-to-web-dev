@@ -65,14 +65,14 @@ function submitAnswerFour() {
   // Get the text from answer one's input element
   const answerFour = answerFourInput.value;
 
-  if(answerFour == '') {
+  if(answerFour == '100') {
     alert("yes");
     hide('question-four');
     show('question-five');
-  } else if(answerFour == '') {
-    alert('oh, how funny and clever you are. Try that again.');
+  } else if(answerFour < 100) {
+    alert('Higher than that, actually!');
   } else {
-    alert('...try again.');
+    alert('Lower than that, actually!');
   }
 }
 
