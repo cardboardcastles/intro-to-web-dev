@@ -2,6 +2,10 @@
   display: none;
 }
 
+#question-three {
+  display: none;
+}
+
 #done {
   display: none;
 }
