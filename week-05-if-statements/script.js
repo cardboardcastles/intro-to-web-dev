@@ -76,7 +76,22 @@ function submitAnswerFour() {
   }
 }
 
+function submitAnswerFour() {
+  // Get answer one's input element
+  const answerFourInput = document.getElementById('answer-four-input');
+  // Get the text from answer one's input element
+  const answerFour = answerFourInput.value;
 
+  if(answerFour == '') {
+    alert("");
+    hide('question-five');
+    show('done');
+  } else if(answerFive == ) {
+    alert('');
+  } else {
+    alert('');
+  }
+}
 
 
 
