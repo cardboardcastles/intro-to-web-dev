@@ -66,7 +66,7 @@ function submitAnswerFour() {
   const answerFour = answerFourInput.value;
 
   if(answerFour == '100') {
-    alert("yes");
+    alert("Correct!");
     hide('question-four');
     show('question-five');
   } else if(answerFour < 100) {
@@ -76,20 +76,22 @@ function submitAnswerFour() {
   }
 }
 
-function submitAnswerFour() {
+function submitAnswerFive() {
   // Get answer one's input element
-  const answerFourInput = document.getElementById('answer-four-input');
+  const answerFiveInput = document.getElementById('answer-five-input');
   // Get the text from answer one's input element
-  const answerFour = answerFourInput.value;
+  const answerFive = answerFiveInput.value;
 
-  if(answerFour == '') {
-    alert("");
+  if(answerFive == 'charon') {
+    alert("correct! Thanks for taking my quiz!");
     hide('question-five');
     show('done');
-  } else if(answerFive == ) {
-    alert('');
+  } else if(answerFive == 'Charon' ) {
+     alert("correct! Nice work.");
+    hide('question-five');
+    show('done');
   } else {
-    alert('');
+    alert('Nope! If you do not know, Google is your friend. Try again.');
   }
 }
 
