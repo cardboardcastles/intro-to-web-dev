@@ -25,13 +25,13 @@ function submitAnswerTwo() {
   if(answerTwo == "May 2nd, 1972") {
     alert("That's right!");
     hide('question-two');
-    show('answer-three');
+    show('question-three');
   } else if(answerTwo == "May 2nd 1972") {
     alert("That's right!");
     hide('question-two');
     show('question-three');
   } else {
-    alert('The answer is lower.');
+    alert('Nope.');
   }
 }
 
