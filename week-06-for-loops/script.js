@@ -38,7 +38,7 @@ function displayLongWords() {
   // Loop over every word in the array.
   for(let i = 0; i < wordsArray.length; i++) {
     const word = wordsArray[i];
-    // If the word has more than 5 characters, display it in the page.
+    // If the word has less than 5 characters, display it in the page.
     if(word.length < 4) {
       const wordElement = document.createElement('li');
       wordElement.innerText = word;
@@ -47,10 +47,9 @@ function displayLongWords() {
   }
 }
 
-function displayCwords
-    const CwordsElement = document.getElementById('C-words');
-
-
+function EveryThird() { document.getElementById('speech');
+  
+}
 
 // TODO: Define your own functions here!
 
