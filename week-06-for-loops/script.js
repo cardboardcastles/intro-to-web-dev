@@ -1,12 +1,26 @@
 // Replace this speeh with your own.
 // Notice the `` backticks, which let you split your string into multiple lines.
-const speech = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-    est laborum.`;
+const speech = `This one's for Badboyhalo
+Yo
+Why you have lice in your head
+Why you got lice in your head
+Badboyhalo
+You should clean your hair
+‘Cause lice is dangerous
+My aunt got lice and she died
+My uncle got lice and he died
+My grandma got lice and she lived
+But she lived a really licey life
+
+Yo, get lice off of your head
+I don’t want lice on your head
+Where are we gonna meet, I’m in the Holy Land right now can you come here quick?
+
+Yeah, Badboyhalo, I bet you’re athletic
+‘Cause you can run real, really fast
+Meet me at the Holy Land, and help me find some netherite
+Why you got lice in your head
+Why you got lice in your head`;
 
 // Remove punctuation from the speech. You might have to modify this if your
 // speech contains other punctuation.
