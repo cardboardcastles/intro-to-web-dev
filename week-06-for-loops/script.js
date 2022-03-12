@@ -24,7 +24,7 @@ Why you got lice in your head`;
 
 // Remove punctuation from the speech. You might have to modify this if your
 // speech contains other punctuation.
-const speechPunctuationRemoved = speech.replace(',', '').replace('.', '');
+const speechPunctuationRemoved = speech.replace(',', '').replace('.', '').replace('?','');
 
 // Use a regular expression to split the speech into individual words. You
 // shouldn't need to change this, unless you want to split on characters other
@@ -39,13 +39,18 @@ function displayLongWords() {
   for(let i = 0; i < wordsArray.length; i++) {
     const word = wordsArray[i];
     // If the word has more than 5 characters, display it in the page.
-    if(word.length > 5) {
+    if(word.length < 4) {
       const wordElement = document.createElement('li');
       wordElement.innerText = word;
       longWordsElement.appendChild(wordElement);
     }
   }
 }
+
+function displayCwords
+    const CwordsElement = document.getElementById('C-words');
+
+
 
 // TODO: Define your own functions here!
 
