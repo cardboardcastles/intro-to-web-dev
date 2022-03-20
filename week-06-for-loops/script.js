@@ -31,9 +31,26 @@ const speechPunctuationRemoved = speech.replace(',', '').replace('.', '').replac
 // than whitespace.
 const wordsArray = speechPunctuationRemoved.split(/\s+/);
 
-// Displays words that have more than 5 characters.
+
 function displayLongWords() {
-  const longWordsElement = document.getElementById('long-words');
+  const LongWordsElement = document.getElementById('long-words');
+
+  // Loop over every word in the array.
+  for(let i = 0; i < wordsArray.length; i++) {
+    const word = wordsArray[i];
+
+    if(word.length > 4) {
+      const wordElement = document.createElement('li');
+      wordElement.innerText = word;
+      LongWordsElement.appendChild(wordElement);
+    }
+  }
+}
+
+
+// Displays words that have more than 5 characters.
+function displayShortWords() {
+  const ShortWordsElement = document.getElementById('short-words');
 
   // Loop over every word in the array.
   for(let i = 0; i < wordsArray.length; i++) {
@@ -42,7 +59,7 @@ function displayLongWords() {
     if(word.length < 4) {
       const wordElement = document.createElement('li');
       wordElement.innerText = word;
-      longWordsElement.appendChild(wordElement);
+      ShortWordsElement.appendChild(wordElement);
     }
   }
 }
@@ -117,6 +134,8 @@ function displaySpeechStats() {
   document.getElementById('speech').innerText = speech;
 
   displayLongWords();
+  
+  displayShortWords();
 
   displayNameStart();
 
