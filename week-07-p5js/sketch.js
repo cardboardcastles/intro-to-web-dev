@@ -21,6 +21,6 @@ function keyPressed() {
   width += 10;
   height += 10;
   
-  resizeCanvas(width, height, true);
+  resizeCanvas(width, height, false);
   background(200);
 }
