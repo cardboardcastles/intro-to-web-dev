@@ -24,6 +24,7 @@ function loadContent() {
   loadTable();
   loadMostImportantTask();
   loadeasiestTask();
+  loadAverage()
 }
 
 // Adds a task to the array and reloads the page content.
@@ -36,6 +37,20 @@ function addNewTask() {
 
   loadContent();
 }
+
+
+function loadAverage (){
+  let total = 0;
+ for(let i = 0; i < taskArray.length; i++){
+    console.log (total)
+   const task = taskArray[i];
+    total += Number(task.energy);
+
+ }
+  let average = total / taskArray.length;
+  console.log (average);
+  document.getElementById('average-energy').innerText = average
+  }
 
 // Iterates over the data array to create a table.
 function loadTable() {
