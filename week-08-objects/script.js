@@ -1,15 +1,17 @@
 // Array of objects representing a todo list.
 // Modify this array to contain your own list.
 const taskArray = [
-  {label: 'Play Minecraft', importance: 3, energy: 0},
-  {label: 'Astronomy notes', importance: 2, energy: 3},
-  {label: 'Clean room', importance: 1, energy: 2},
-  {label: 'Register to vote', importance: 2, energy: 1},
-  {label: 'Get dinner at the Galley', importance:4, energy:2},
-  {label: 'Watch a show with Peter', importance:2, energy: 0.5},
-  {label: 'Email professor', importance: 1, energy: 1},
+  {label: 'Play Minecraft', importance: 10, energy: 0},
+  {label: 'Astronomy notes', importance: 5, energy: 3},
+  {label: 'Clean room', importance: 2, energy: 2},
+  {label: 'Register to vote', importance: 1, energy: 1},
+  {label: 'Get dinner at the Galley', importance:6, energy:2},
+  {label: 'Watch a show with Peter', importance:8, energy: 0.5},
+  {label: 'Email professor', importance: 4, energy: 1},
   {label: 'Work on English paper', importance: 3, energy: 4},
-  {label: 'Pick up mail', importance: 0.5, energy: 1}
+  {label: 'Pick up mail', importance: 7, energy: 1},
+  {label: 'Go for a walk', importance: 9, energy: 2},
+  {label: 'Call my brother', importance: 6.5, energy: 1},
 
 ];
 
