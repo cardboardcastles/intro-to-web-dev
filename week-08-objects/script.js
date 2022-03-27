@@ -1,35 +1,27 @@
- // Array of objects representing a todo list.
+// Array of objects representing a todo list.
 // Modify this array to contain your own list.
-const Characters = [
-  {CharacterName: "Taako", 
-  Quote: [' "Hail and well met, my dudes!" ']
-  },
-  
-  {CharacterName: "Magnus", 
-  Quote: [' "Do good recklessly!" ']
-  },
-  
-  {CharacterName: "Merle",
-  Quote: [' "I find joy in...life!" ']},
-  
+const taskArray = [
+  {label: 'Water plants', time: 3},
+  {label: 'Homework', time: 2},
+  {label: 'Laundry', time: 1},
 ];
 
 // Loads the content into the page.
 function loadContent() {
-  // This line of code sorts the array alphabetically by the task names.
+  // This line of code sorts the array alphabetically by the task labels.
   // Modify this to sort your data by a different field, or just delete it.
-  Characters.sort((a, b) => compare(a.name, b.name));
+  taskArray.sort((a, b) => compare(a.label, b.label));
 
   loadTable();
   loadShortestTask();
 }
 
 // Adds a task to the array and reloads the page content.
-function addNewCharacter() {
-  const NewCharacterName = document.getElementById('name-input').value;
-  const NewCharacterQuote = document.getElementById('time-input').value;
-  const NewCharacter = {name: NewCharacterName, time: newTaskTime };
-  Characters.push(NewCharacter);
+function addNewTask() {
+  const newTaskLabel = document.getElementById('label-input').value;
+  const newTaskTime = document.getElementById('time-input').value;
+  const newTask = {label: newTaskLabel, time: newTaskTime };
+  taskArray.push(newTask);
 
   loadContent();
 }
@@ -41,17 +33,17 @@ function loadTable() {
   // Create a header row.
   const headerRowElement = document.createElement('tr');
   headerRowElement.appendChild(createElement('th', 'Index'));
-  headerRowElement.appendChild(createElement('th', 'Name'));
-  headerRowElement.appendChild(createElement('th', 'Quote'));
+  headerRowElement.appendChild(createElement('th', 'Label'));
+  headerRowElement.appendChild(createElement('th', 'Time'));
   tableElement.appendChild(headerRowElement);
 
   // Iterate over the array and create a table row for each object.
-  for (let i = 0; i < Characters.length; i++) {
-    const task = Characters[i];
+  for (let i = 0; i < taskArray.length; i++) {
+    const task = taskArray[i];
     const rowElement = document.createElement('tr');
     rowElement.appendChild(createElement('td', i));
-    rowElement.appendChild(createElement('td', Character.Name));
-    rowElement.appendChild(createElement('td', Character.Quote));
+    rowElement.appendChild(createElement('td', task.label));
+    rowElement.appendChild(createElement('td', task.time));
     tableElement.appendChild(rowElement);
   }
 
@@ -63,17 +55,17 @@ function loadTable() {
 // Displays the name of the shortest task.
 function loadShortestTask(){
   // Assume the first task is shortest
-  let shortestTask = Characters[0];
+  let shortestTask = taskArray[0];
 
   // Starting with the second task, look for a shorter task
-  for (let i = 1; i < Characters.length; i++) {
-    const task = Characters[i];
+  for (let i = 1; i < taskArray.length; i++) {
+    const task = taskArray[i];
     // If this task is shorter than the previous shortest, it's now the shortest
     if(task.time < shortestTask.time) {
       shortestTask = task;
     }
   }
-  document.getElementById('shortest-task').innerText = shortestTask.name;
+  document.getElementById('shortest-task').innerText = shortestTask.label;
 }
 
 // Helper function that creates an element that contains text content.
