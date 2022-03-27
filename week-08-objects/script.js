@@ -1,9 +1,16 @@
 // Array of objects representing a todo list.
 // Modify this array to contain your own list.
 const taskArray = [
-  {label: 'Water plants', time: 3},
-  {label: 'Homework', time: 2},
-  {label: 'Laundry', time: 1},
+  {label: 'Play Minecraft', time: 3, energy: 0},
+  {label: 'Astronomy notes', time: 2, energy: 3},
+  {label: 'Clean room', time: 1, energy: 2},
+  {label: 'Register to vote', time: 2, energy: 1},
+  {label: 'Get dinner at the Galley', time:4, energy:2},
+  {label: 'Watch a show with Peter', time:2, energy: 0.5},
+  {label: 'Email professor', time: 1, energy: 1},
+  {label: 'Work on English paper', time: 3, energy: 4},
+  {label: 'Pick up mail', time: 0.5, energy: 1}
+
 ];
 
 // Loads the content into the page.
@@ -14,13 +21,15 @@ function loadContent() {
 
   loadTable();
   loadShortestTask();
+  loadeasiestTask();
 }
 
 // Adds a task to the array and reloads the page content.
 function addNewTask() {
   const newTaskLabel = document.getElementById('label-input').value;
   const newTaskTime = document.getElementById('time-input').value;
-  const newTask = {label: newTaskLabel, time: newTaskTime };
+  const newTaskEnergy = document.getElementById('energy-input').value;
+  const newTask = {label: newTaskLabel, time: newTaskTime, energy: newTaskEnergy };
   taskArray.push(newTask);
 
   loadContent();
@@ -35,6 +44,8 @@ function loadTable() {
   headerRowElement.appendChild(createElement('th', 'Index'));
   headerRowElement.appendChild(createElement('th', 'Label'));
   headerRowElement.appendChild(createElement('th', 'Time'));
+  headerRowElement.appendChild(createElement('th', 'Energy'));
+  
   tableElement.appendChild(headerRowElement);
 
   // Iterate over the array and create a table row for each object.
@@ -44,6 +55,7 @@ function loadTable() {
     rowElement.appendChild(createElement('td', i));
     rowElement.appendChild(createElement('td', task.label));
     rowElement.appendChild(createElement('td', task.time));
+    rowElement.appendChild(createElement('td', task.energy));
     tableElement.appendChild(rowElement);
   }
 
@@ -67,6 +79,23 @@ function loadShortestTask(){
   }
   document.getElementById('shortest-task').innerText = shortestTask.label;
 }
+
+
+function loadeasiestTask(){
+  // Assume the first task is shortest
+  let easiestTask = taskArray[0];
+
+  // Starting with the second task, look for a shorter task
+  for (let i = 1; i < taskArray.length; i++) {
+    const task = taskArray[i];
+    // If this task is shorter than the previous shortest, it's now the shortest
+    if(task.energy < easiestTask.energy) {
+      easiestTask = task;
+    }
+  }
+  document.getElementById('easiest-task').innerText = easiestTask.label;
+}
+
 
 // Helper function that creates an element that contains text content.
 function createElement(tag, text) {

@@ -9,7 +9,8 @@
     <h1>Task List</h1>
     <div id="table-container"></div>
     <hr>
-    <p>Shortest task: <span id="shortest-task"></span></p>
+    <p><i>Shortest task:</i> <span id="shortest-task"></span></p>
+    <p><i>Easiest task:</i> <span id="easiest-task"> </span></p>
     <hr>
     <div>
       <h1>New Task</h1>
@@ -17,7 +18,14 @@
       <br><br>
       Time: <input type="number" id="time-input" />
       <br><br>
+      Energy: <input type="number" id="energy-input" />
+      <br><br>
       <button onclick="addNewTask();">Add</button>
     </div>
+    <hr>
+<h1>Confused?</h1>
+    <p><b><i>Importance</i></b> tasks are scaled from 1 being <b>most important</b>, to 10 or above being <b>least important.</b></p>
+  
+    <p><b><i>Energy</i></b> tasks are scaled from 0 to 5 or above based on how much energy they take to do. Lower numbers indicate <b>lower</b> amounts of energy, while higher numbers indicate <b>higher amounts.</b></p>
   </body>
 </html>
