@@ -1,6 +1,23 @@
 <!DOCTYPE html>
- <head>
-    <title>Task List</title>
+<html>
+  <head>
+    <title>Character List</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
   </head>
+  <body onload="loadContent();">
+    <h1>Character List</h1>
+    <div id="table-container"></div>
+    <hr>
+    <p>First Character: <span id="shortest-task"></span></p>
+    <hr>
+    <div>
+      <h1>Add Character</h1>
+      Name: <input type="text" id="name-input"/>
+      <br><br>
+      Time: <input type="number" id="time-input" />
+      <br><br>
+      <button onclick="addNewTask();">Add</button>
+    </div>
+  </body>
+</html>
