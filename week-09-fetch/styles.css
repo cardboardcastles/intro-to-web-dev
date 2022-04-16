@@ -1,8 +1,25 @@
 #images {
   width: 500px;
-  border: thin solid black;
+  border: thin solid white;
 }
 
 #images img {
   width: 100px;
 }
+
+h1 {
+  font-family: 'Helvetica';
+  text-align: center;
+  
+  
+}
+
+h2 {
+text-align: center;
+  
+}
+
+body {
+background-color: #1DB954;
+}
+
