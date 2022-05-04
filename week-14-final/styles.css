@@ -1,0 +1,9 @@
+#output {
+ 
+  display: none;
+}
+
+#name-output {
+  font-weight: bold;
+  color: red;
+}
