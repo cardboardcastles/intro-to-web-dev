@@ -13,7 +13,19 @@ function fillOutputs() {
   outputDiv.style.display = 'block';
 }
 
+function NoTutorial() {
 
+let NoTutInput = document.getElementById('no-tut-input');
+  let NoTut = NoTutInput.value;
+  
+let NoTutOutput = document.getElementById('no-tut-output');
+  NoTutOutput.innerText = NoTut;
+
+ 
+  let outputDiv = document.getElementById('output');
+  outputDiv.style.display = 'block';
+
+}
 
   //what is the url of your final project?
 
