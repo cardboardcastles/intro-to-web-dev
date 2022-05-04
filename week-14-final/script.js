@@ -13,18 +13,12 @@ function fillOutputs() {
   outputDiv.style.display = 'block';
 }
 
-function NoTutorial() {
+function sayThing() {
+  let noTutorial = document.getElementById('NoTutorial');
+  noTutorial.onClick = sayThing
 
-let NoTutInput = document.getElementById('no-tut-input');
-  let NoTut = NoTutInput.value;
+  document.write("oh wow")
   
-let NoTutOutput = document.getElementById('no-tut-output');
-  NoTutOutput.innerText = NoTut;
-
- 
-  let outputDiv = document.getElementById('output');
-  outputDiv.style.display = 'block';
-
 }
 
   //what is the url of your final project?
