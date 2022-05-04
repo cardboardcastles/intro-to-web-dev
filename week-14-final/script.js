@@ -15,8 +15,6 @@ function fillOutputs() {
 
 function sayThing() {
   let noTutorial = document.getElementById('NoTutorial');
-  noTutorial.onClick = sayThing
-
   document.write("oh wow")
   
 }
