@@ -21,16 +21,22 @@ function sayThing() {
 
 function sayOtherThing() {
   let Tutorial = document.getElementById('Tutorial');
-  document.write("Allow me to explain, then! This is a short choose-your-own-adventure thing. Every step of the way, there will be new buttons to press, new decisions to make. To begin, click the button below! <p><button id='StartButton'>Start</button></p> ");
+  show
 
-  let StartButton = document.getElementById('start-button');
+  hide('Tutorial');
+  show('question-one'); 
 }
 
 
-//helper function
+//helper functions
 function show(id) {
   const element = document.getElementById(id);
   element.style.display = 'block';
+}
+
+function hide(id) {
+  const element = document.getElementById(id);
+  element.style.display = 'none';
 }
 
   //what is the url of your final project?
