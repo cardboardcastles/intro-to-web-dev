@@ -5,11 +5,34 @@
 
 #name-output {
   font-weight: bold;
+  font-style: italic;
+  font-family: fantasy;
   color: red;
+  size: larger;
 }
 
 start-button {
 
-display: none;
+  display: none;
   
 }
+
+h1 {
+
+  text-align: center;
+  font-family: fantasy;
+  
+}
+
+p, div {
+
+  text-align: center;
+  
+}
+
+body {
+
+  background-color: lightblue;
+  
+}
+
