@@ -3,7 +3,7 @@ function fillOutputs() {
 
   let nameInput = document.getElementById('name-input');
   let name = nameInput.value;
-
+ 
   
   let nameOutput = document.getElementById('name-output');
   nameOutput.innerText = name;
